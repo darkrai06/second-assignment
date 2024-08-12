@@ -229,7 +229,7 @@
 }
 table{
   border-width: 1px;
-  width: 420px;
+  max-width: 420px;
   padding: 0px;
   margin-top: 20px;
   color: darkgray;
@@ -245,7 +245,7 @@ td{
   width: 100%;
   background-color: rgb(33, 33, 33);
   padding: 60px 190px;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 .foot{
   display: flex;
@@ -337,6 +337,21 @@ td{
   justify-content: center;
   align-items: center;
 }
+.naam{
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: end;
+}
+.a{
+  color: white;
+  font-weight: 800;
+  font-size: 24px;
+}
+.b{
+  color: darkgray;
+  font-size: 14px;
+}
 .jpg{
   box-sizing: border-box;
   display: grid;
@@ -346,7 +361,8 @@ td{
 .khela,.khela1{
   height: 15em;
   width: 20em;
-  border-radius: 16px;
+  border-radius: 18px;
+  opacity: 70%;
 }
 .wow{
   background-color: rgb(47,47,47);
@@ -354,6 +370,16 @@ td{
   border-radius: 8px;
   border: 0px;
   color: darkgray;
+}
+.c,.c1,.c2{
+  position: relative;
+  top: -350px;
+  left: 20px;
+}
+.d,.d1,.d2{
+  position: relative;
+  top: -135px;
+  left: 20px;
 }
 
 ::placeholder{
@@ -452,13 +478,12 @@ td{
   margin-left: 20px;
   margin-right: 10px;
 }
-table{
-  width: 400px;
-}
 .pa{
   padding: 20px 20px;
 }
-
+table{
+  width: 80vw;
+}
 .easy{
   max-width: 100%;
 }
@@ -488,6 +513,48 @@ table{
   flex-direction: column;
 }
 .btn1,.btn2{
-  padding: 16px 20px;}
-    
+  padding: 16px 20px;
+}
+.wow {
+  padding: 8px;
+  font-size: 14px;
+}
+.c1,.d1{
+  display: none;
+}
+.naam{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  grid-template-columns: auto;
+}
+.c{
+  position: relative;
+  top: -870px;
+  left: 20px;
+}
+.c2{
+  position: relative;
+  top: -660px;
+  left: 20px;
+}
+.d{
+  position: relative;
+  top: -440px;
+  left: 20px;
+}
+.d2{
+  position: relative;
+  top: -230px;
+  left: 20px;
+}   
+}
+@media screen and (max-width: 425px){
+  .take{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .wow{
+    flex: 1 1 100%;
+  }
 }
