@@ -234,7 +234,7 @@
   border-radius: 16px;
 }
 .para{
-  color: darkgray;
+  color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
 }
 .m{
@@ -273,7 +273,7 @@ table{
   width: 320px;
   padding: 0px;
   margin-top: 20px;
-  color: darkgray;
+  color: rgba(255, 255, 255, 0.5);
 }
 th{
   text-align: left;
@@ -326,7 +326,7 @@ td{
   font-weight: 900;
 }
 .why{
-  color: darkgray;
+  color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
   font-weight: 400;
   margin-top: 24px;
@@ -390,7 +390,7 @@ td{
   font-size: 24px;
 }
 .b{
-  color: darkgray;
+  color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
 }
 .jpg{
@@ -410,7 +410,7 @@ td{
   padding: 10px 10px;
   border-radius: 8px;
   border: 0px;
-  color: darkgray;
+  color: rgba(255, 255, 255, 0.5);
 }
 .c,.c1,.c2{
   position: relative;
@@ -424,7 +424,7 @@ td{
 }
 
 ::placeholder{
-  color: darkgray;
+  color: rgba(255, 255, 255, 0.6);
 }
 @media screen and (max-width: 576px) {
   .upor{
