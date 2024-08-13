@@ -13,7 +13,6 @@
   }
   *{
     margin: 0px;
-    
     box-sizing: border-box;
   }
   .upor{
@@ -99,24 +98,41 @@
     padding-top: 28px;
 }
 .btncircle {
-    position: relative;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    backdrop-filter: blur(10px);
-    background: rgba(48, 48, 48, 0.54);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 20px 23px;
-    top: -150px;
-    left: 690px;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  background: rgba(48, 48, 48, 0.54);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 23px;
+  top: -150px;
+  left: 690px;
 }
+
 .btncircle .circle {
-    width: 40px;
-    height: 40px;
-    background-color: rgb(230, 83, 60);
-    border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(230, 83, 60);
+  border-radius: 50%;
+  position: relative;
+}
+
+.btncircle .circle .tri {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid white;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+.tri{
+  opacity: 0%;
 }
 .btncir{
     position: relative;
@@ -141,6 +157,7 @@
     color: rgba(239, 237, 232, 0.65);
     font-size: 16px;
     font-weight: 400;
+    white-space: nowrap;
 }
 .absurd{
   display: flex;
@@ -211,12 +228,13 @@
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
-  padding: 50px 200px;
-  gap: 200px;
+  padding: 50px 190px;
+  overflow: hidden;
 }
 .data {
   display: flex;
   flex-direction: column;
+  max-width: 575px;
   gap: 20px;
 }
 .take{
@@ -229,7 +247,7 @@
 }
 table{
   border-width: 1px;
-  max-width: 420px;
+  width: 320px;
   padding: 0px;
   margin-top: 20px;
   color: darkgray;
@@ -408,32 +426,32 @@ td{
   }
   .btncir{
     position: relative;
-    width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     backdrop-filter: blur(20px);
     background: rgba(48, 48, 48, 0.54);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 20px 13px;
+    padding: 13px 12px;
     top: -500px;
     left: -80px;
 }
 .btncircle {
   position: relative;
-  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   backdrop-filter: blur(10px);
   background: rgba(48, 48, 48, 0.54);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 13px;
+  padding: 13px 12px;
   top: -350px;
   left: -150px;
+}
+.tri{
+  opacity: 100%;
+}
+.tut{
+  color: rgba(239, 237, 232, 0.65);
+  font-size: 10px;
+  font-weight: 400;
+  display: inline;
 }
 .pic{
   padding: 0px 10px 20px 10px;
@@ -494,7 +512,7 @@ table{
 }
 .btncircle .circle {
   width: 50px;
-  height: 40px;
+  height: 50px;
   background-color: rgb(230, 83, 60);
   border-radius: 50%;
 }
@@ -515,9 +533,8 @@ table{
 .btn1,.btn2{
   padding: 16px 20px;
 }
-.wow {
-  padding: 8px;
-  font-size: 14px;
+input{
+  width: 100%;
 }
 .c1,.d1{
   display: none;
@@ -532,6 +549,13 @@ table{
   position: relative;
   top: -870px;
   left: 20px;
+}
+.c .ellipsis-target::after {
+  content: '..';
+  display: inline-block;
+}
+.oimama{
+  display: none;
 }
 .c2{
   position: relative;
@@ -548,13 +572,4 @@ table{
   top: -230px;
   left: 20px;
 }   
-}
-@media screen and (max-width: 425px){
-  .take{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .wow{
-    flex: 1 1 100%;
-  }
 }
